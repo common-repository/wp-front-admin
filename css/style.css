@@ -1,0 +1,56 @@
+#wpadminbar #wp-admin-bar-wpfap_toolbar > .ab-item:before {
+	content: "\f535";
+    top: 2px;
+}
+
+#TB_window #TB_title{
+	background:none;
+	border:0;
+	height:0px;
+}
+#TB_window #TB_ajaxContent{
+	width:100% !important;
+	padding:0;
+}
+
+#wpfap_sidebar{
+	position:fixed !important;
+	background:#32373c;
+	z-index:99998;
+	height:100%;
+	width:700px;
+	right:0 !important;
+	top:0 !important;
+	box-shadow:0 0 7px 0px rgba(0,0,0,0.3);
+}
+
+@-webkit-keyframes pulsate{
+	0%   {background: yellow;}
+	100% {background: #fff;}
+}
+
+#wpfap_sidebar form.wpfap_success{
+	animation: pulsate 1.5s;
+}
+
+#wpfap_sidebar .ui-resizable-handle.ui-resizable-w{
+	background:#32373c;
+	width:12px;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left:0;
+	cursor: ew-resize;
+}
+
+#wpfap_sidebar .ui-resizable-handle.ui-resizable-w i{
+	color: #ccc;
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	margin-left: 3px;
+}
+
+#wpfap_sidebar .ui-resizable-handle.ui-resizable-w:hover i{
+	color:#fff;
+}
